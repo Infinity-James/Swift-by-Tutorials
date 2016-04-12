@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Reversi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Main View">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="White Score Background" translatesAutoresizingMaskIntoConstraints="NO" id="lEM-zn-pzu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0X-PX-AaC" userLabel="White Score Label">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Black Score Background" translatesAutoresizingMaskIntoConstraints="NO" id="EMy-G6-OI2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj5-jX-5Y6" userLabel="Black Score Label">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNT-FI-fxt" userLabel="Restart Button">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RNT-FI-fxt" secondAttribute="height" multiplier="5:1" id="7Aj-cH-HhJ"/>
+                                    <constraint firstAttribute="width" constant="270" id="VF6-fY-396"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                <state key="normal" title="Game Over - Restart" backgroundImage="Restart Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7Aj-cH-HhJ"/>
+                                        <exclude reference="VF6-fY-396"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="7Aj-cH-HhJ"/>
+                                        <include reference="VF6-fY-396"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="restartTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tua-c5-64h"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reversi Board" translatesAutoresizingMaskIntoConstraints="NO" id="jUn-JZ-SjR" userLabel="Board Background View">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jUn-JZ-SjR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3JD-KL-Eew"/>
+                            <constraint firstAttribute="trailing" secondItem="jUn-JZ-SjR" secondAttribute="trailing" id="4h0-P6-rNV"/>
+                            <constraint firstItem="RNT-FI-fxt" firstAttribute="centerY" secondItem="EMy-G6-OI2" secondAttribute="centerY" constant="0.5" id="B0w-xr-cyq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jUn-JZ-SjR" secondAttribute="bottom" id="Cie-3Q-oGZ"/>
+                            <constraint firstAttribute="centerX" secondItem="RNT-FI-fxt" secondAttribute="centerX" id="Ees-8s-D6p"/>
+                            <constraint firstItem="lEM-zn-pzu" firstAttribute="centerY" secondItem="EMy-G6-OI2" secondAttribute="centerY" id="T1L-3P-z3H"/>
+                            <constraint firstItem="y0X-PX-AaC" firstAttribute="centerX" secondItem="lEM-zn-pzu" secondAttribute="centerX" constant="-0.5" id="Yfw-bd-AcD"/>
+                            <constraint firstItem="Jj5-jX-5Y6" firstAttribute="centerY" secondItem="EMy-G6-OI2" secondAttribute="centerY" id="Z5S-Gj-3x8"/>
+                            <constraint firstAttribute="centerX" secondItem="EMy-G6-OI2" secondAttribute="centerX" id="Zi2-GP-OV5">
+                                <variation key="heightClass=regular-widthClass=regular" constant="264"/>
+                            </constraint>
+                            <constraint firstItem="y0X-PX-AaC" firstAttribute="centerY" secondItem="lEM-zn-pzu" secondAttribute="centerY" id="dPx-UQ-6U1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EMy-G6-OI2" secondAttribute="bottom" constant="67" id="ivb-Nr-fWd"/>
+                            <constraint firstItem="Jj5-jX-5Y6" firstAttribute="centerX" secondItem="EMy-G6-OI2" secondAttribute="centerX" constant="-0.5" id="jfR-KV-UG9"/>
+                            <constraint firstItem="jUn-JZ-SjR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="rsB-i2-WAK"/>
+                            <constraint firstAttribute="centerX" secondItem="lEM-zn-pzu" secondAttribute="centerX" id="tea-bm-IHv">
+                                <variation key="heightClass=regular-widthClass=regular" constant="-264"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lEM-zn-pzu"/>
+                                <exclude reference="y0X-PX-AaC"/>
+                                <exclude reference="EMy-G6-OI2"/>
+                                <exclude reference="Jj5-jX-5Y6"/>
+                                <exclude reference="RNT-FI-fxt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Z5S-Gj-3x8"/>
+                                <exclude reference="jfR-KV-UG9"/>
+                                <exclude reference="ivb-Nr-fWd"/>
+                                <exclude reference="Yfw-bd-AcD"/>
+                                <exclude reference="dPx-UQ-6U1"/>
+                                <exclude reference="B0w-xr-cyq"/>
+                                <exclude reference="Ees-8s-D6p"/>
+                                <exclude reference="Zi2-GP-OV5"/>
+                                <exclude reference="T1L-3P-z3H"/>
+                                <exclude reference="tea-bm-IHv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="lEM-zn-pzu"/>
+                                <include reference="y0X-PX-AaC"/>
+                                <include reference="EMy-G6-OI2"/>
+                                <include reference="Jj5-jX-5Y6"/>
+                                <include reference="RNT-FI-fxt"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Z5S-Gj-3x8"/>
+                                <include reference="jfR-KV-UG9"/>
+                                <include reference="ivb-Nr-fWd"/>
+                                <include reference="Yfw-bd-AcD"/>
+                                <include reference="dPx-UQ-6U1"/>
+                                <include reference="B0w-xr-cyq"/>
+                                <include reference="Ees-8s-D6p"/>
+                                <include reference="Zi2-GP-OV5"/>
+                                <include reference="T1L-3P-z3H"/>
+                                <include reference="tea-bm-IHv"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="blackScoreLabel" destination="Jj5-jX-5Y6" id="Gkf-Xz-twY"/>
+                        <outlet property="restartButton" destination="RNT-FI-fxt" id="eYr-re-lnm"/>
+                        <outlet property="whiteScoreLabel" destination="y0X-PX-AaC" id="UCk-Mi-Dcx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Black Score Background" width="129" height="129"/>
+        <image name="Restart Button" width="270" height="54"/>
+        <image name="Reversi Board" width="768" height="1024"/>
+        <image name="White Score Background" width="129" height="129"/>
+    </resources>
+</document>
