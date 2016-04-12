@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A2FF60A1AD4045D002613BF /* CafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FF6091AD4045D002613BF /* CafeViewController.swift */; };
+		1A691CC51A22159A00D1E220 /* CafeHunterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A691CC41A22159A00D1E220 /* CafeHunterTests.swift */; };
+		1A691CDA1A22170400D1E220 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A691CCF1A22170400D1E220 /* ViewController.swift */; };
+		1A691CDB1A22170400D1E220 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A691CD21A22170400D1E220 /* Images.xcassets */; };
+		1A691CDC1A22170400D1E220 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A691CD41A22170400D1E220 /* AppDelegate.swift */; };
+		1A691CDE1A22170400D1E220 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A691CD71A22170400D1E220 /* Main.storyboard */; };
+		1A691CE01A22183900D1E220 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A691CDF1A22183900D1E220 /* JSON.swift */; };
+		1A691CE51A22217600D1E220 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A691CE41A22216100D1E220 /* FacebookSDK.framework */; };
+		1A719E261AA22DB9003A0B72 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A719E251AA22DB9003A0B72 /* Cafe.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A691CBF1A22159A00D1E220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A691CA11A22159900D1E220 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A691CA81A22159900D1E220;
+			remoteInfo = CafeHunter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A2FF6091AD4045D002613BF /* CafeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeViewController.swift; sourceTree = "<group>"; };
+		1A691CA91A22159900D1E220 /* CafeHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A691CBE1A22159A00D1E220 /* CafeHunterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafeHunterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A691CC31A22159A00D1E220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A691CC41A22159A00D1E220 /* CafeHunterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeHunterTests.swift; sourceTree = "<group>"; };
+		1A691CCF1A22170400D1E220 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A691CD21A22170400D1E220 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A691CD41A22170400D1E220 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A691CD51A22170400D1E220 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A691CD81A22170400D1E220 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A691CDF1A22183900D1E220 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		1A691CE11A22205D00D1E220 /* CafeHunter-ObjectiveCBridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CafeHunter-ObjectiveCBridging.h"; sourceTree = "<group>"; };
+		1A691CE41A22216100D1E220 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		1A719E251AA22DB9003A0B72 /* Cafe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A691CA61A22159900D1E220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A691CE51A22217600D1E220 /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A691CBB1A22159A00D1E220 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A691CA01A22159900D1E220 = {
+			isa = PBXGroup;
+			children = (
+				1A691CE21A2220DC00D1E220 /* Frameworks */,
+				1A691CAB1A22159900D1E220 /* CafeHunter */,
+				1A691CC11A22159A00D1E220 /* CafeHunterTests */,
+				1A691CAA1A22159900D1E220 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A691CAA1A22159900D1E220 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A691CA91A22159900D1E220 /* CafeHunter.app */,
+				1A691CBE1A22159A00D1E220 /* CafeHunterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A691CAB1A22159900D1E220 /* CafeHunter */ = {
+			isa = PBXGroup;
+			children = (
+				1A691CCE1A22170400D1E220 /* Controller */,
+				1A691CD01A22170400D1E220 /* Model */,
+				1A691CD11A22170400D1E220 /* Resources */,
+				1A691CD31A22170400D1E220 /* Supporting-Files */,
+				1A691CD61A22170400D1E220 /* User-Interface */,
+				1A691CD91A22170400D1E220 /* View */,
+			);
+			path = CafeHunter;
+			sourceTree = "<group>";
+		};
+		1A691CC11A22159A00D1E220 /* CafeHunterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A691CC41A22159A00D1E220 /* CafeHunterTests.swift */,
+				1A691CC21A22159A00D1E220 /* Supporting Files */,
+			);
+			path = CafeHunterTests;
+			sourceTree = "<group>";
+		};
+		1A691CC21A22159A00D1E220 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A691CC31A22159A00D1E220 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A691CCE1A22170400D1E220 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1A2FF6091AD4045D002613BF /* CafeViewController.swift */,
+				1A691CCF1A22170400D1E220 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1A691CD01A22170400D1E220 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A719E251AA22DB9003A0B72 /* Cafe.swift */,
+				1A691CDF1A22183900D1E220 /* JSON.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A691CD11A22170400D1E220 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A691CD21A22170400D1E220 /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A691CD31A22170400D1E220 /* Supporting-Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A691CE11A22205D00D1E220 /* CafeHunter-ObjectiveCBridging.h */,
+				1A691CD41A22170400D1E220 /* AppDelegate.swift */,
+				1A691CD51A22170400D1E220 /* Info.plist */,
+			);
+			path = "Supporting-Files";
+			sourceTree = "<group>";
+		};
+		1A691CD61A22170400D1E220 /* User-Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1A691CD71A22170400D1E220 /* Main.storyboard */,
+			);
+			path = "User-Interface";
+			sourceTree = "<group>";
+		};
+		1A691CD91A22170400D1E220 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A691CE21A2220DC00D1E220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A691CE41A22216100D1E220 /* FacebookSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A691CA81A22159900D1E220 /* CafeHunter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A691CC81A22159A00D1E220 /* Build configuration list for PBXNativeTarget "CafeHunter" */;
+			buildPhases = (
+				1A691CA51A22159900D1E220 /* Sources */,
+				1A691CA61A22159900D1E220 /* Frameworks */,
+				1A691CA71A22159900D1E220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CafeHunter;
+			productName = CafeHunter;
+			productReference = 1A691CA91A22159900D1E220 /* CafeHunter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A691CBD1A22159A00D1E220 /* CafeHunterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A691CCB1A22159A00D1E220 /* Build configuration list for PBXNativeTarget "CafeHunterTests" */;
+			buildPhases = (
+				1A691CBA1A22159A00D1E220 /* Sources */,
+				1A691CBB1A22159A00D1E220 /* Frameworks */,
+				1A691CBC1A22159A00D1E220 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A691CC01A22159A00D1E220 /* PBXTargetDependency */,
+			);
+			name = CafeHunterTests;
+			productName = CafeHunterTests;
+			productReference = 1A691CBE1A22159A00D1E220 /* CafeHunterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A691CA11A22159900D1E220 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "&Beyond";
+				TargetAttributes = {
+					1A691CA81A22159900D1E220 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					1A691CBD1A22159A00D1E220 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 1A691CA81A22159900D1E220;
+					};
+				};
+			};
+			buildConfigurationList = 1A691CA41A22159900D1E220 /* Build configuration list for PBXProject "CafeHunter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A691CA01A22159900D1E220;
+			productRefGroup = 1A691CAA1A22159900D1E220 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A691CA81A22159900D1E220 /* CafeHunter */,
+				1A691CBD1A22159A00D1E220 /* CafeHunterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A691CA71A22159900D1E220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A691CDE1A22170400D1E220 /* Main.storyboard in Resources */,
+				1A691CDB1A22170400D1E220 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A691CBC1A22159A00D1E220 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A691CA51A22159900D1E220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2FF60A1AD4045D002613BF /* CafeViewController.swift in Sources */,
+				1A719E261AA22DB9003A0B72 /* Cafe.swift in Sources */,
+				1A691CE01A22183900D1E220 /* JSON.swift in Sources */,
+				1A691CDC1A22170400D1E220 /* AppDelegate.swift in Sources */,
+				1A691CDA1A22170400D1E220 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A691CBA1A22159A00D1E220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A691CC51A22159A00D1E220 /* CafeHunterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A691CC01A22159A00D1E220 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A691CA81A22159900D1E220 /* CafeHunter */;
+			targetProxy = 1A691CBF1A22159A00D1E220 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A691CD71A22170400D1E220 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A691CD81A22170400D1E220 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A691CC61A22159A00D1E220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A691CC71A22159A00D1E220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A691CC91A22159A00D1E220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/CafeHunter/Supporting-Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CafeHunter/Supporting-Files/CafeHunter-ObjectiveCBridging.h";
+			};
+			name = Debug;
+		};
+		1A691CCA1A22159A00D1E220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/CafeHunter/Supporting-Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CafeHunter/Supporting-Files/CafeHunter-ObjectiveCBridging.h";
+			};
+			name = Release;
+		};
+		1A691CCC1A22159A00D1E220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CafeHunterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafeHunter.app/CafeHunter";
+			};
+			name = Debug;
+		};
+		1A691CCD1A22159A00D1E220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CafeHunterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafeHunter.app/CafeHunter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A691CA41A22159900D1E220 /* Build configuration list for PBXProject "CafeHunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A691CC61A22159A00D1E220 /* Debug */,
+				1A691CC71A22159A00D1E220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A691CC81A22159A00D1E220 /* Build configuration list for PBXNativeTarget "CafeHunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A691CC91A22159A00D1E220 /* Debug */,
+				1A691CCA1A22159A00D1E220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A691CCB1A22159A00D1E220 /* Build configuration list for PBXNativeTarget "CafeHunterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A691CCC1A22159A00D1E220 /* Debug */,
+				1A691CCD1A22159A00D1E220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A691CA11A22159900D1E220 /* Project object */;
+}
